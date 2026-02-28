@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="regression.VerifyUserSignupWithValidDetails$VerifySignupwithExistingEmail">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="verifySignUpExistingMeth" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- regression.VerifyUserSignupWithValidDetails$VerifySignupwithExistingEmail -->
+      <class name="regression.VerifyAddMultipleProductstoCart">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="validateProductscart"/>
+        </methods>
+      </class> <!-- regression.VerifyAddMultipleProductstoCart -->
+      <class name="regression.VerifyLogoutFunctionality">
+        <methods>
+          <include name="validateLoginTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- regression.VerifyLogoutFunctionality -->
+      <class name="regression.VerifyAddProducttoCart">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loadConfig"/>
+          <include name="validateProductscart"/>
+        </methods>
+      </class> <!-- regression.VerifyAddProducttoCart -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

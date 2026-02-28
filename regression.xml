@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="utils.MyTestNGListener"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="regression.VerifyCheckoutProcess"/>
+      <class name="regression.VerifyUserSignupWithValidDetails"/>
+      <class name="regression.VerifyRemoveProductfromCart"/>
+      <class name="regression.VerifyLoginwithInValidCredentials"/>
+      <class name="regression.VerifyAddMultipleProductstoCart"/>
+      <class name="regression.VerifyPlaceOrderwithValidDetails"/>
+      <class name="regression.VerifyAddProducttoCart"/>
+      <class name="regression.VerifySearchwithInvalidProduct"/>
+      <class name="regression.VerifyProductSearchFunction"/>
+      <class name="regression.VerifySignupwithExistingEmail"/>
+      <class name="regression.VerifyLogoutFunctionality"/>
+      <class name="regression.VerifyHomePageLogoClick"/>
+      <class name="regression.VerifyContactFormValidation"/>
+      <class name="regression.VerifyProductsPageNavigation"/>
+      <class name="regression.VerifyCartQuantityUpdate"/>
+      <class name="regression.VerifyLoginwithValidCredentials"/>
+      <class name="regression.VerifyContactUsFormSubmission"/>
+      <class name="regression.VerifyFooterSubscription"/>
+      <class name="regression.VerifyCheckoutWithoutLogin"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
