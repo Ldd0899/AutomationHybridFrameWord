@@ -7,9 +7,9 @@ import org.testng.annotations.Test;
 
 import base.BaseTest;
 import pages.LoginPage;
-import pages.ProductsPage;
 import pages.SignupPage;
 import utils.UtilKits;
+
 
 public class VerifySignupwithExistingEmail extends BaseTest {
 	@Test(dataProvider="getSetData" , description ="TC-19 validate sign up page already existing user")

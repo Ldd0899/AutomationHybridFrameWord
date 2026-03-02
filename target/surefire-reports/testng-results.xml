@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-02T10:36:28 IST" name="Suite" finished-at="2026-03-02T10:37:14 IST" duration-ms="45477">
+    <groups>
+    </groups>
+    <test started-at="2026-03-02T10:36:28 IST" name="Test" finished-at="2026-03-02T10:37:14 IST" duration-ms="45477">
+      <class name="regression.VerifyLoginwithInValidCredentials">
+        <test-method is-config="true" signature="loadConfig()[pri:0, instance:regression.VerifyLoginwithInValidCredentials@c8c12ac]" started-at="2026-03-02T10:36:28 IST" name="loadConfig" finished-at="2026-03-02T10:36:28 IST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfig -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:regression.VerifyLoginwithInValidCredentials@c8c12ac]" started-at="2026-03-02T10:36:29 IST" name="setUp" finished-at="2026-03-02T10:37:09 IST" duration-ms="39565" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void regression.VerifyLoginwithInValidCredentials.validateLoginTest(java.util.HashMap)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateLoginTest(java.util.HashMap)[pri:0, instance:regression.VerifyLoginwithInValidCredentials@c8c12ac]" started-at="2026-03-02T10:37:09 IST" name="validateLoginTest" data-provider="getTestData" finished-at="2026-03-02T10:37:14 IST" duration-ms="5109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=lavanyanedunuri24@gmail.com, Textname=Your email or password is incorrect!, Password=Lavanya@24}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:regression.VerifyLoginwithInValidCredentials@c8c12ac]" started-at="2026-03-02T10:37:14 IST" name="tearDown" finished-at="2026-03-02T10:37:18 IST" duration-ms="4182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- regression.VerifyLoginwithInValidCredentials -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -18,14 +18,21 @@ public class MyTestNGListener extends BaseTest implements ITestListener {
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
-		test.addScreenCaptureFromPath(UtilKits.getScreenshot());
-		test.log(Status.INFO,result.getMethod().getMethodName()+" is pass;..");
+
+	    String screenshotPath = UtilKits.getScreenshot();
+
+	    if (screenshotPath != null && !screenshotPath.isEmpty()) {
+	        test.addScreenCaptureFromPath(screenshotPath);
+	    }
+
+	    test.log(Status.PASS,
+	        result.getMethod().getMethodName() + " is passed");
 	}
 	
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-		test.addScreenCaptureFromPath(UtilKits.getScreenshot());
+		//test.addScreenCaptureFromPath(UtilKits.getScreenshot());
 		test.log(Status.INFO,result.getMethod().getMethodName()+" is fail ...");
 		
 	}

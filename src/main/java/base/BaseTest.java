@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
@@ -83,16 +84,19 @@ public class BaseTest {
 		
 		
 	}
-	@AfterMethod
-	public void tearDown()
-	{
+	@AfterSuite
+	public void tearDown() {
+
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		driver.quit();
-		test.log(Status.INFO,  "Browser is closed ..");
-		}
+	    if (driver != null) {
+	        driver.quit();
+	    }
+	}
+
+		
 }
